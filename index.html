@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – YouTube Bulk Unsubscriber</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#f5f7fc,#0d1018);--paper:light-dark(#ffffff,#141826);--ink:light-dark(#141b33,#e8ebf6);--body:light-dark(#36405e,#c7cce0);--mute:light-dark(#687392,#929ab8);--line:light-dark(#e2e6f1,#262c42);--em:light-dark(#2f4fd8,#93a8ff);--em2:#2540b4;--mint:light-dark(#ebefff,#1a2142);--mint2:light-dark(#d3dbfd,#2a3568)}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.72 "Plus Jakarta Sans",system-ui,sans-serif;overflow-x:clip}
+.skip{position:absolute;left:12px;top:-60px;z-index:50;background:var(--ink);color:var(--paper);padding:10px 14px;border-radius:8px;font-weight:700;text-decoration:none}.skip:focus{top:12px}
+.wrap{max-width:1140px;margin:0 auto;padding-inline:max(5vw,16px)}
+.ico{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.cover{position:relative;overflow:hidden;background:#101a46;color:#fff;padding:clamp(36px,5.5vw,62px) 0 clamp(84px,9vw,104px)}
+.cover::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 90% at 85% 0%,rgb(88 120 255 / .45),transparent 60%),radial-gradient(50% 80% at 0% 100%,rgb(47 79 216 / .55),transparent 60%)}
+.cover::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgb(255 255 255 / .09) 1px,transparent 1.2px);background-size:22px 22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 70%);mask-image:linear-gradient(90deg,transparent,#000 70%)}
+.cv{position:relative;z-index:1;display:flex;align-items:center;gap:clamp(18px,3vw,28px)}
+.seal{flex:none;position:relative;display:grid;place-items:center;width:clamp(62px,7vw,76px);height:clamp(62px,7vw,76px);border-radius:18px;background:linear-gradient(150deg,#ffffff,#e4e9ff);box-shadow:0 16px 36px -16px rgb(0 0 0 / .6),inset 0 -2px 0 rgb(47 79 216 / .15)}
+.seal svg{width:56%;height:56%}
+.seal .tk{stroke-dasharray:14;stroke-dashoffset:14;animation:draw .9s .35s cubic-bezier(.6,0,.2,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.kicker{display:inline-flex;align-items:center;gap:8px;margin:0 0 8px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#b9c6ff}
+.kicker::before{content:"";width:18px;height:2px;border-radius:2px;background:currentColor}
+h1{margin:0;font-size:clamp(27px,4.2vw,42px);line-height:1.12;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+.lead{margin:12px 0 0;max-width:58ch;font-size:16px;color:rgb(255 255 255 / .8)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 20px;margin:16px 0 0;padding:0;list-style:none;font-size:14px;color:rgb(255 255 255 / .82)}
+.meta li{display:flex;align-items:center;gap:7px}.meta svg{width:16px;height:16px;color:#b9c6ff}
+.glance{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:-56px}
+.gl{display:flex;flex-direction:column;gap:10px;padding:18px;background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 18px 36px -28px rgb(16 26 70 / .55);transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+.gl:hover{transform:translateY(-3px);box-shadow:0 24px 40px -26px rgb(16 26 70 / .6)}
+.gl i{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:var(--mint);color:var(--em)}
+.gl i svg{width:20px;height:20px}
+.gl b{display:block;font-size:15px;font-weight:700;line-height:1.3}
+.gl span{display:block;margin-top:2px;font-size:14px;line-height:1.5;color:var(--mute)}
+.lay{display:grid;grid-template-columns:270px minmax(0,1fr);gap:32px;align-items:start;padding-block:32px 16px}
+.side{position:sticky;top:20px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 10px 10px}
+.side h2{display:flex;justify-content:space-between;align-items:center;margin:0 8px 10px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.side h2 output{font-size:12px;letter-spacing:0;color:var(--em);font-variant-numeric:tabular-nums}
+.steps{position:relative;list-style:none;margin:0;padding:0}
+.rail{display:block;height:3px;margin:0 8px 8px;border-radius:3px;background:var(--line);overflow:hidden}
+.rail span{display:block;height:100%;background:var(--em);transform-origin:0 50%;transform:scaleX(0)}
+.steps a{position:relative;display:flex;align-items:center;gap:10px;min-height:42px;padding:6px 10px;border-radius:9px;color:var(--body);text-decoration:none;font-size:14.5px;font-weight:600;line-height:1.3;transition:background-color .2s,color .2s}
+.steps a b{flex:none;display:grid;place-items:center;width:24px;height:24px;border-radius:7px;background:var(--bg);border:1px solid var(--line);font-size:12px;font-weight:700;color:var(--mute);transition:background-color .25s,border-color .25s,color .25s}
+.steps a i{display:none}
+.steps a:hover{background:var(--bg);color:var(--ink)}
+.steps a.past b{color:var(--em);border-color:var(--mint2)}
+.steps a.on{background:var(--mint);color:var(--em)}
+.steps a.on b{background:var(--em);border-color:var(--em);color:light-dark(#fff,#0c1440)}
+.doc{display:grid;gap:14px}
+.sec{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:clamp(20px,3vw,28px) clamp(20px,3.2vw,34px);scroll-margin-top:20px;transition:border-color .4s,box-shadow .4s}
+.sec:focus{outline:none}
+.sec h3{display:flex;align-items:center;gap:14px;margin:0 0 12px;font-size:clamp(19px,2.2vw,22px);line-height:1.3;font-weight:800;letter-spacing:-.01em}
+.sec h3 i{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:11px;background:var(--mint);color:var(--em);transition:background-color .35s,color .35s}
+.sec h3 i svg{width:21px;height:21px}
+.sec h3 small{display:block;font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--em);text-transform:uppercase;margin-bottom:1px}
+.sec.hit{border-color:var(--em);box-shadow:0 0 0 3px var(--mint)}
+.sec.hit h3 i{background:var(--em);color:light-dark(#fff,#0c1440)}
+.txt{color:var(--body);max-width:70ch}
+.txt p{margin:0 0 12px}.txt p:last-child{margin:0}
+.txt ul{list-style:none;margin:0 0 12px;padding:0}.txt ul:last-child{margin-bottom:0}
+.txt li{position:relative;margin:9px 0;padding-left:28px}
+.txt li::before{content:"";position:absolute;left:0;top:.28em;width:18px;height:18px;border-radius:50%;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232f4fd8' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
+.txt strong{color:var(--ink);font-weight:700}
+.note{display:flex;gap:12px;align-items:flex-start;margin-top:14px;padding:12px 16px;border-radius:11px;background:var(--bg);border:1px solid var(--line);font-size:15.5px}
+.note svg{flex:none;width:19px;height:19px;margin-top:3px;color:var(--em)}
+.mailbox{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin-top:6px;padding:18px 20px;border:1px solid var(--mint2);border-radius:12px;background:var(--mint)}
+.mailbox>i{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:11px;background:var(--em);color:#fff}
+.mailbox>i svg{width:21px;height:21px}
+.mailbox .who{flex:1 1 calc(100% - 64px)}
+.mailbox small{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.mailbox a.em{font-size:17px;font-weight:700;color:var(--em);text-decoration:none;overflow-wrap:anywhere;border-bottom:1px solid var(--mint2)}
+.mailbox a.em:hover{border-color:var(--em)}
+.mailbox .act{display:flex;gap:8px;flex-wrap:wrap;padding-left:60px}
+.mailbox .act a,.mailbox .act button{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:8px 16px;border-radius:9px;font:700 14.5px "Plus Jakarta Sans",system-ui,sans-serif;text-decoration:none;cursor:pointer;transition:background-color .2s,border-color .2s,color .2s}
+.mailbox .act a{background:var(--em);color:light-dark(#fff,#0c1440);border:1px solid var(--em)}
+.mailbox .act a:hover{background:var(--em2);border-color:var(--em2)}
+.mailbox .act button{background:var(--paper);color:var(--ink);border:1px solid var(--line)}
+.mailbox .act button:hover{border-color:var(--em);color:var(--em)}
+.mailbox .act svg{width:16px;height:16px}
+footer{padding:14px 0 40px;text-align:center;color:var(--mute);font-size:14px}
+.mnav{display:none}
+.steps a:focus-visible,.mnav button:focus-visible,.mnav a:focus-visible,.mailbox a:focus-visible,.mailbox button:focus-visible{outline:3px solid var(--em);outline-offset:2px}
+.js .sec{opacity:0;transform:translateY(12px);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.8,.2,1),border-color .4s,box-shadow .4s}
+.js .sec.seen{opacity:1;transform:none}
+@media(max-width:1000px){.glance{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:999px){
+.lay{grid-template-columns:minmax(0,1fr);padding-top:16px}.side{display:none}
+.mnav{display:block;position:sticky;top:0;z-index:30;padding:10px 0;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.mnav.stuck{background:color-mix(in srgb,var(--paper) 94%,transparent);border-bottom:1px solid var(--line);box-shadow:0 10px 24px -20px rgb(16 26 70 / .5)}
+.mbtn{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:7px 14px 7px 8px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);font:700 15px "Plus Jakarta Sans",system-ui,sans-serif;cursor:pointer;text-align:left}
+.mbtn b{flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:var(--em);color:light-dark(#fff,#0c1440);font-size:13px;font-weight:800}
+.mbtn i{flex:none;display:grid;place-items:center;color:var(--em)}.mbtn i svg{width:18px;height:18px}
+.mbtn .t{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mbtn .t small{display:block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);line-height:1.2}
+.mbtn .cv2{flex:none;transition:transform .3s}.mbtn[aria-expanded=true] .cv2{transform:rotate(180deg)}
+.mbar{height:3px;margin:8px 4px 0;background:var(--line);border-radius:3px;overflow:hidden}.mbar span{display:block;height:100%;background:var(--em);transform-origin:0 50%;transform:scaleX(0)}
+.mlist{position:absolute;left:max(5vw,16px);right:max(5vw,16px);top:calc(100% - 6px);list-style:none;margin:0;padding:6px;background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:0 24px 44px -20px rgb(16 26 70 / .45);max-height:min(70vh,520px);overflow:auto;opacity:0;transform:translateY(-6px);visibility:hidden;transition:opacity .22s,transform .22s,visibility 0s .22s}
+.mnav.open .mlist{opacity:1;transform:none;visibility:visible;transition:opacity .22s,transform .22s}
+.mlist a{display:flex;align-items:center;gap:12px;min-height:46px;padding:6px 10px;border-radius:9px;color:var(--body);text-decoration:none;font-size:15px;font-weight:600}
+.mlist a b{flex:none;display:grid;place-items:center;width:26px;height:26px;border-radius:7px;border:1px solid var(--line);font-size:12px;font-weight:800;color:var(--mute)}
+.mlist a i{display:grid;place-items:center;color:var(--em)}.mlist a i svg{width:17px;height:17px}
+.mlist a.on{background:var(--mint);color:var(--em)}.mlist a.on b{background:var(--em);border-color:var(--em);color:light-dark(#fff,#0c1440)}
+.sec{scroll-margin-top:96px}
+}
+@media(max-width:560px){.glance{grid-template-columns:minmax(0,1fr);gap:10px}.gl{flex-direction:row;align-items:flex-start;gap:12px;padding:14px 16px}.gl i{flex:none}.cv{align-items:flex-start}body{font-size:16px}.mailbox .act{width:100%;padding-left:0}.mailbox .act a,.mailbox .act button{flex:1 1 130px;justify-content:center}.mailbox{padding:14px;gap:10px 12px}.mailbox .who{flex-basis:100%}.mailbox a.em{font-size:15.5px}.mailbox>i{display:none}}
+@media(hover:none){.gl:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.seal .tk{stroke-dashoffset:0}.js .sec{opacity:1;transform:none}}
+@media print{.side,.mnav,.skip,.mailbox .act{display:none}.lay{grid-template-columns:1fr}.cover{background:none;color:#000}.cover::before,.cover::after{display:none}.lead,.meta,.kicker{color:#333}.glance{margin-top:0}.js .sec{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<a class="skip" href="#s1">Skip to the policy</a>
+<header class="cover">
+<div class="wrap cv">
+<div class="seal" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.6l7.6 2.9v6.1c0 4.9-3.2 8.6-7.6 10-4.4-1.4-7.6-5.1-7.6-10V5.5z" fill="#2f4fd8"/><path class="tk" d="M8.4 12.2l2.5 2.5 4.8-5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<div>
+<p class="kicker">Privacy Policy</p>
+<h1>YouTube Bulk Unsubscriber</h1>
+<p class="lead">A clear summary of what the Extension reads, what stays on your device and what is shared.</p>
+<ul class="meta"><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Effective 26 November 2026</li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4.5a2 2 0 0 1 4 0V6h4v4h-1.5a2 2 0 0 0 0 4H18v4.5H6V14h1.5a2 2 0 0 0 0-4H6V6h4z"/></svg>Chrome extension</li></ul>
+</div>
+</div>
+</header>
+<div class="wrap"><div class="glance"><div class="gl"><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5L12 4l8 6.5V20H4z"/><path d="M10 20v-5h4v5"/></svg></i><div><b>Works in your browser</b><span>It manages your subscriptions on your own YouTube page.</span></div></div><div class="gl"><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/></svg></i><div><b>Stays on your device</b><span>Your list, history and backups are saved locally.</span></div></div><div class="gl"><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg></i><div><b>No selling, no tracking</b><span>We have no servers and use no ads or analytics.</span></div></div><div class="gl"><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l1.9 5.2 5.1 1.9-5.1 1.9-1.9 5.2-1.9-5.2-5.1-1.9 5.1-1.9z"/><path d="M18.5 15.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></i><div><b>Optional extras only</b><span>Voice and cloud AI are used only if you turn them on.</span></div></div></div></div>
+<nav class="mnav" aria-label="On this page"><div class="wrap" style="position:relative">
+<button class="mbtn" type="button" aria-expanded="false" aria-controls="mlist"><b>1</b><i></i><span class="t"><small>On this page</small><span></span></span><svg class="ico cv2" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+<div class="mbar" aria-hidden="true"><span></span></div>
+<ol class="mlist" id="mlist"><li><a href="#s1"><b>1</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5h10a3 3 0 0 1 3 3V20H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h10M9 8.5h5"/></svg></i><span>Overview</span></a></li><li><a href="#s2"><b>2</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3.5"/><path d="M10.5 9.5v5l4.2-2.5z"/></svg></i><span>Information we access</span></a></li><li><a href="#s3"><b>3</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.8v2.4M12 18.8v2.4M4.2 7.5l2 1.2M17.8 15.3l2 1.2M4.2 16.5l2-1.2M17.8 8.7l2-1.2"/><circle cx="12" cy="12" r="7"/></svg></i><span>How we use information</span></a></li><li><a href="#s4"><b>4</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/></svg></i><span>Where your data is kept</span></a></li><li><a href="#s5"><b>5</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="18" cy="18" r="2.4"/><path d="M8.2 10.9l7.6-3.8M8.2 13.1l7.6 3.8"/></svg></i><span>What we share</span></a></li><li><a href="#s6"><b>6</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 2.8v6c0 4.7-3.1 8.2-7.5 9.6-4.4-1.4-7.5-4.9-7.5-9.6v-6z"/><path d="M9 12l2.2 2.2L15.2 10"/></svg></i><span>Our commitments</span></a></li><li><a href="#s7"><b>7</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="6" r="2.5"/><path d="M8 21v-5.5L6 11.5c1.5-1 3.8-1.6 6-1.6s4.5.6 6 1.6l-2 4V21M12 15v6"/></svg></i><span>Children</span></a></li><li><a href="#s8"><b>8</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.6L4 8.5M4 4v4.5h4.5M4 13a8 8 0 0 0 14.3 4.6L20 15.5M20 20v-4.5h-4.5"/></svg></i><span>Changes to this policy</span></a></li><li><a href="#s9"><b>9</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></i><span>Contact us</span></a></li></ol>
+</div></nav>
+<div class="wrap lay">
+<aside class="side"><nav aria-label="On this page"><h2>On this page <output>1 / 9</output></h2><span class="rail" aria-hidden="true"><span></span></span><ol class="steps"><li><a href="#s1" title="1. Overview"><b>1</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5h10a3 3 0 0 1 3 3V20H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h10M9 8.5h5"/></svg></i><span>Overview</span></a></li><li><a href="#s2" title="2. Information we access"><b>2</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3.5"/><path d="M10.5 9.5v5l4.2-2.5z"/></svg></i><span>Information we access</span></a></li><li><a href="#s3" title="3. How we use information"><b>3</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.8v2.4M12 18.8v2.4M4.2 7.5l2 1.2M17.8 15.3l2 1.2M4.2 16.5l2-1.2M17.8 8.7l2-1.2"/><circle cx="12" cy="12" r="7"/></svg></i><span>How we use information</span></a></li><li><a href="#s4" title="4. Where your data is kept"><b>4</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/></svg></i><span>Where your data is kept</span></a></li><li><a href="#s5" title="5. What we share"><b>5</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="18" cy="18" r="2.4"/><path d="M8.2 10.9l7.6-3.8M8.2 13.1l7.6 3.8"/></svg></i><span>What we share</span></a></li><li><a href="#s6" title="6. Our commitments"><b>6</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 2.8v6c0 4.7-3.1 8.2-7.5 9.6-4.4-1.4-7.5-4.9-7.5-9.6v-6z"/><path d="M9 12l2.2 2.2L15.2 10"/></svg></i><span>Our commitments</span></a></li><li><a href="#s7" title="7. Children"><b>7</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="6" r="2.5"/><path d="M8 21v-5.5L6 11.5c1.5-1 3.8-1.6 6-1.6s4.5.6 6 1.6l-2 4V21M12 15v6"/></svg></i><span>Children</span></a></li><li><a href="#s8" title="8. Changes to this policy"><b>8</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.6L4 8.5M4 4v4.5h4.5M4 13a8 8 0 0 0 14.3 4.6L20 15.5M20 20v-4.5h-4.5"/></svg></i><span>Changes to this policy</span></a></li><li><a href="#s9" title="9. Contact us"><b>9</b><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></i><span>Contact us</span></a></li></ol></nav></aside>
+<main class="doc" id="policy">
+<section class="sec" id="s1" tabindex="-1"><h3><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5h10a3 3 0 0 1 3 3V20H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h10M9 8.5h5"/></svg></i><span><small>Section 01</small>Overview</span></h3><div class="txt"><p>This Privacy Policy explains how YouTube Bulk Unsubscriber (“the Extension”) handles your information. In this policy, “we”, “us” and “our” mean the developer of the Extension.</p>
+<p>The Extension helps you view, sort and unsubscribe from your own YouTube channel subscriptions, with undo, backups and insights. It works inside your browser, using the YouTube account you are already signed in to. We have no servers, we never receive your YouTube data, and we never sell it.</p></div></section>
+<section class="sec" id="s2" tabindex="-1"><h3><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3.5"/><path d="M10.5 9.5v5l4.2-2.5z"/></svg></i><span><small>Section 02</small>Information we access</span></h3><div class="txt"><ul>
+<li><strong>Your subscriptions:</strong> the channels you are subscribed to and their public details, such as name, photo, subscriber count, video count, topics and the date of their latest upload. This lets you sort your list and spot inactive channels.</li>
+<li><strong>Your YouTube account:</strong> basic details of the account you are signed in to, such as your name, handle and photo, only to show whose list is open and to keep each account’s settings separate.</li>
+<li><strong>Your YouTube session:</strong> the Extension uses your existing YouTube session in this browser to read your list and to unsubscribe or resubscribe when you ask. It never asks for, reads or stores your password.</li>
+<li><strong>Your voice (optional):</strong> if you turn on voice commands, Chrome’s speech recognition turns what you say into text. If you set up voice lock, the Extension keeps a small numeric voice signature, never a recording.</li>
+<li><strong>License key:</strong> if you buy Pro, the key you enter is used only to check your purchase.</li>
+</ul></div></section>
+<section class="sec" id="s3" tabindex="-1"><h3><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.8v2.4M12 18.8v2.4M4.2 7.5l2 1.2M17.8 15.3l2 1.2M4.2 16.5l2-1.2M17.8 8.7l2-1.2"/><circle cx="12" cy="12" r="7"/></svg></i><span><small>Section 03</small>How we use information</span></h3><div class="txt"><ul>
+<li>To show your subscriptions with search, filters, rules and insights.</li>
+<li>To unsubscribe only from the channels you choose, always skip your protected channels, and let you undo or resubscribe.</li>
+<li>To keep your history and the backups you make, and to create the files and reports you export.</li>
+<li>To refresh your list in the background, and to show the optional weekly digest and right-click actions.</li>
+<li>To understand voice and AI requests, only when you use those features.</li>
+<li>To remember your settings, count your free removals and check your license.</li>
+</ul></div></section>
+<section class="sec" id="s4" tabindex="-1"><h3><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/></svg></i><span><small>Section 04</small>Where your data is kept</span></h3><div class="txt"><p>Your subscription list, history, backups, rules and settings are saved in your browser, on your own device. None of it is sent to us.</p>
+<p>A few small items, such as your voice signature, license, free removal count, protected channels, rules and preferences, are also saved in Chrome’s synced storage and, encrypted, in your browser’s storage for youtube.com. This lets them come back after you reinstall the Extension. They are linked to a one-way code made from your YouTube account, never to your email.</p>
+<div class="note"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6v.1"/></svg><span><strong>Your controls:</strong> Settings → Delete voice removes your voice signature everywhere. Settings → Clear all local data deletes the copy in your browser. Clearing Chrome sync data or site data for youtube.com removes the other copies.</span></div></div></section>
+<section class="sec" id="s5" tabindex="-1"><h3><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="18" cy="18" r="2.4"/><path d="M8.2 10.9l7.6-3.8M8.2 13.1l7.6 3.8"/></svg></i><span><small>Section 05</small>What we share</span></h3><div class="txt"><p>We do not sell or share your data. The Extension only connects to these services, and only for the reasons below:</p>
+<ul>
+<li><strong>YouTube:</strong> to read your subscriptions and to unsubscribe or resubscribe, using your own session.</li>
+<li><strong>Gumroad</strong>, our payment provider: when you activate Pro and from time to time after that, your license key and the product ID are sent only to check that your license is valid. No YouTube data is included.</li>
+<li><strong>Google speech recognition:</strong> only while the microphone is on, Chrome sends your voice to Google to turn it into text. The voice lock check runs on your device.</li>
+<li><strong>Google AI (optional):</strong> only if you add your own Google AI key, the text of your request and a short summary of your feed, such as counts and top topics, are sent to Google’s Gemini service. Your account details are never included, and the key stays in this browser. Chrome’s built-in on-device AI sends nothing.</li>
+</ul>
+<p><strong>Sharing and bug reports:</strong> share buttons open the app you choose with text you can edit first. Bug reports open as an email draft you can read and change; the optional technical details never include channel names, your license key or account details. Nothing is sent unless you send it yourself.</p>
+<p>If you buy Pro, the payment happens on Gumroad’s website, under Gumroad’s own terms.</p></div></section>
+<section class="sec" id="s6" tabindex="-1"><h3><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 2.8v6c0 4.7-3.1 8.2-7.5 9.6-4.4-1.4-7.5-4.9-7.5-9.6v-6z"/><path d="M9 12l2.2 2.2L15.2 10"/></svg></i><span><small>Section 06</small>Our commitments</span></h3><div class="txt"><ul>
+<li>We never sell or rent your data.</li>
+<li>We never use your data for ads or credit decisions.</li>
+<li>We use your data only to help you manage your subscriptions.</li>
+<li>We never add tracking, analytics or outside code.</li>
+</ul></div></section>
+<section class="sec" id="s7" tabindex="-1"><h3><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="6" r="2.5"/><path d="M8 21v-5.5L6 11.5c1.5-1 3.8-1.6 6-1.6s4.5.6 6 1.6l-2 4V21M12 15v6"/></svg></i><span><small>Section 07</small>Children</span></h3><div class="txt"><p>The Extension is not intended for children.</p></div></section>
+<section class="sec" id="s8" tabindex="-1"><h3><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.6L4 8.5M4 4v4.5h4.5M4 13a8 8 0 0 0 14.3 4.6L20 15.5M20 20v-4.5h-4.5"/></svg></i><span><small>Section 08</small>Changes to this policy</span></h3><div class="txt"><p>If we change this policy, we will post the new version on this page with a new effective date.</p></div></section>
+<section class="sec" id="s9" tabindex="-1"><h3><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></i><span><small>Section 09</small>Contact us</span></h3><div class="txt"><p>If you have any questions about this Privacy Policy, please email us.</p>
+<div class="mailbox"><i><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></i><div class="who"><small>Email</small><a class="em" href="mailto:mwaqaskhn519@gmail.com?subject=YouTube%20Bulk%20Unsubscriber%20-%20Privacy%20question">mwaqaskhn519@gmail.com</a></div><div class="act"><a href="mailto:mwaqaskhn519@gmail.com?subject=YouTube%20Bulk%20Unsubscriber%20-%20Privacy%20question"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h13M12 6l6 6-6 6"/></svg><span>Email us</span></a><button type="button" data-v="mwaqaskhn519@gmail.com"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg><span>Copy</span></button></div></div></div></section>
+</main>
+</div>
+<footer class="wrap">YouTube Bulk Unsubscriber is an independent tool and is not affiliated with, endorsed or sponsored by YouTube or Google.</footer>
+<script>(()=>{
+const S=[...document.querySelectorAll('.sec')],A=[...document.querySelectorAll('.steps a')],M=[...document.querySelectorAll('.mlist a')],rail=document.querySelector('.rail span'),mnav=document.querySelector('.mnav'),mbtn=document.querySelector('.mbtn'),mbar=document.querySelector('.mbar span');
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;let cur=-1,lock=0,tick=false;
+function mark(n){if(n===cur)return;cur=n;
+A.forEach((a,i)=>{a.classList.toggle('on',i===n);a.classList.toggle('past',i<n);i===n?a.setAttribute('aria-current','true'):a.removeAttribute('aria-current')});
+M.forEach((a,i)=>{a.classList.toggle('on',i===n);i===n?a.setAttribute('aria-current','true'):a.removeAttribute('aria-current')});
+const oc=document.querySelector('.side output');if(oc)oc.textContent=(n+1)+' / '+S.length;
+const src=M[n];if(src){mbtn.querySelector('b').textContent=n+1;mbtn.querySelector('i').innerHTML=src.querySelector('i').innerHTML;mbtn.querySelector('.t>span').textContent=src.querySelector('span').textContent}}
+function upd(){tick=false;const d=document.documentElement,max=d.scrollHeight-innerHeight,p=max>0?Math.min(1,scrollY/max):0;mbar.style.transform='scaleX('+p+')';rail.style.transform='scaleX('+p+')';mnav.classList.toggle('stuck',mnav.getBoundingClientRect().top<=0.5&&scrollY>40);
+if(Date.now()<lock)return;const line=innerHeight*.32;let n=0;S.forEach((x,i)=>{if(x.getBoundingClientRect().top<=line)n=i});if(innerHeight+scrollY>=d.scrollHeight-4)n=S.length-1;mark(n)}
+addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});addEventListener('resize',upd);
+function close(){mnav.classList.remove('open');mbtn.setAttribute('aria-expanded','false')}
+mbtn.addEventListener('click',()=>{const o=!mnav.classList.contains('open');mnav.classList.toggle('open',o);mbtn.setAttribute('aria-expanded',String(o));if(o&&M[cur])M[cur].focus({preventScroll:true})});
+document.addEventListener('click',e=>{if(!mnav.contains(e.target))close()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&mnav.classList.contains('open')){close();mbtn.focus()}});
+function go(t){const n=S.indexOf(t);if(n<0)return;close();lock=Date.now()+(reduce?50:900);mark(n);t.classList.add('seen');t.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});t.focus({preventScroll:true});S.forEach(x=>x.classList.remove('hit'));void t.offsetWidth;t.classList.add('hit');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('hit'),1500);try{history.replaceState(null,'','#'+t.id)}catch(err){}}
+[...A,...M].forEach(a=>a.addEventListener('click',e=>{e.preventDefault();go(document.querySelector(a.getAttribute('href')))}));
+document.querySelector('.skip').addEventListener('click',e=>{e.preventDefault();go(S[0])});
+document.querySelectorAll('.mailbox button').forEach(b=>b.addEventListener('click',()=>{const l=b.querySelector('span');try{navigator.clipboard.writeText(b.dataset.v).then(()=>{l.textContent='Copied';setTimeout(()=>l.textContent='Copy',1600)},()=>{l.textContent='Select and copy'})}catch(e){l.textContent='Select and copy'}}));
+if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('seen');io.unobserve(x.target)}}),{rootMargin:'0px 0px -6% 0px'});S.forEach(x=>io.observe(x))}else S.forEach(x=>x.classList.add('seen'));
+const h=location.hash.slice(1);requestAnimationFrame(()=>{const t=/^s[0-9]+$/.test(h)&&document.getElementById(h);if(t){t.classList.add('seen');mark(S.indexOf(t))}else mark(0);upd()});
+})()</script>
+</body>
+</html>
